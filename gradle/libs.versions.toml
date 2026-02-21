@@ -72,7 +72,7 @@ androidx-test-runner = { group = "androidx.test", name = "runner", version.ref =
 androidx-test-rules = { group = "androidx.test", name = "rules", version.ref = "testRules" }
 androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 
-tens-infrastructure = { group = "no.jluehr.h10tensinfrastructure", name = "tens-h10-infrastructure", version.ref = "myInfrastructure" }
+tens-infrastructure = { group = "no.jluehr", name = "tensh10", version.ref = "myInfrastructure" }
 
 [bundles]
 base = [
