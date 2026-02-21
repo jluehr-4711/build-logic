@@ -1,0 +1,56 @@
+# ------------------
+# GRADLE BUILD SYSTEM
+# ------------------
+# The "Brain" cache we fought earlier. Never commit this.
+.gradle/
+
+# The "Output" folder. Contains APKs, AARs, and intermediate files (like the generated manifest).
+build/
+
+# Wrapper overrides (optional, but good practice to ignore local modifications)
+gradle-app.setting
+!gradle-wrapper.jar
+
+# ------------------
+# ANDROID STUDIO / INTELLIJ
+# ------------------
+# User-specific configurations (layout, run configs, history)
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
+
+# Local configuration file (contains absolute paths to your SDK - NEVER commit this)
+local.properties
+
+# ------------------
+# ANDROID SPECIFIC
+# ------------------
+# Generated files
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Proguard intermediate files
+proguard-logs/
+usage.txt
+mapping.txt
+seeds.txt
+
+# ------------------
+# KOTLIN / JAVA
+# ------------------
+*.class
+
+# ------------------
+# MACOS (Your Environment)
+# ------------------
+# Finder cache files
+.DS_Store
+.AppleDouble
+.LSOverride
+
