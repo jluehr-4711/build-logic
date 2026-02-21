@@ -10,6 +10,8 @@ pluginManagement {
         mavenCentral()
         gradlePluginPortal()
     }
+    includeBuild("../build-logic")
+
 }
 
 dependencyResolutionManagement {
@@ -20,4 +22,5 @@ dependencyResolutionManagement {
         maven { url = uri("https://jitpack.io") }
     }
 }
+includeBuild("../tens-h10-infrastructure")
 
