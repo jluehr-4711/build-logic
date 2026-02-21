@@ -1,5 +1,4 @@
 [versions]
-myInfrastructure = "1.0-SNAPSHOT"
 
 # Build & Core
 agp = "8.13.2"
@@ -72,7 +71,8 @@ androidx-test-runner = { group = "androidx.test", name = "runner", version.ref =
 androidx-test-rules = { group = "androidx.test", name = "rules", version.ref = "testRules" }
 androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 
-tens-infrastructure = { group = "no.jluehr", name = "tensh10", version.ref = "myInfrastructure" }
+tens-infrastructure = { group = "no.jluehr", name = "tensh10", version = "1.0-SNAPSHOT" }
+nongames = { group = "no.jluehr.nongames", name = "nongames", version = "1.0-SNAPSHOT" }
 
 [bundles]
 base = [
