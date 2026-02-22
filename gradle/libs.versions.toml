@@ -133,7 +133,8 @@ hardware-integration = [
     "androidx-room-runtime",
     "coil-compose",
     "play-services-mlkit-face-detection",
-    "mlkit-pose-detection"
+    "mlkit-pose-detection",
+    "androidx-camera-lifecycle"
 ]
 
 [plugins]
