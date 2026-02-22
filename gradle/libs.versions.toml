@@ -24,7 +24,8 @@ roomRuntime = "2.8.4"
 cameraxVersion = "1.5.3"
 coilCompose = "2.7.0"
 playServicesMlkitFaceDetection = "17.1.0"
-
+lifecycleViewmodelCompose = "2.10.0"
+mlkitPoseDetection = "18.0.0-beta5"
 
 # Testing
 junit = "4.13.2"
@@ -76,7 +77,7 @@ androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomRunt
 androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
 coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
 play-services-mlkit-face-detection = { module = "com.google.android.gms:play-services-mlkit-face-detection", version.ref = "playServicesMlkitFaceDetection" }
-
+mlkit-pose-detection = { module = "com.google.mlkit:pose-detection", version.ref = "mlkitPoseDetection" }
 
 
 # Testing
@@ -128,11 +129,11 @@ hardware-integration = [
     "androidx-camera-core",
     "androidx-camera-view",
     "androidx-camera-camera2",
-    "androidx-room-compiler",
     "androidx-room-ktx",
     "androidx-room-runtime",
     "coil-compose",
-    "play-services-mlkit-face-detection"
+    "play-services-mlkit-face-detection",
+    "mlkit-pose-detection"
 ]
 
 [plugins]
