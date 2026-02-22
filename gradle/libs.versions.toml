@@ -20,6 +20,11 @@ rxandroid = "3.0.2"
 # Hardware / External
 cameraCore = "1.5.3"
 polarBleSdk = "5.5.0"
+roomRuntime = "2.8.4"
+cameraxVersion = "1.5.3"
+coilCompose = "2.7.0"
+playServicesMlkitFaceDetection = "17.1.0"
+
 
 # Testing
 junit = "4.13.2"
@@ -60,8 +65,19 @@ rxandroid = { module = "io.reactivex.rxjava3:rxandroid", version.ref = "rxandroi
 rxjava = { module = "io.reactivex.rxjava3:rxjava", version.ref = "rxjava" }
 
 # External & Hardware
-androidx-camera-core = { module = "androidx.camera:camera-core", version.ref = "cameraCore" }
 polar-ble-sdk = { module = "com.github.polarofficial:polar-ble-sdk", version.ref = "polarBleSdk" }
+
+androidx-camera-view = { module = "androidx.camera:camera-view", version.ref = "cameraxVersion" }
+androidx-camera-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "cameraxVersion" }
+androidx-camera-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "cameraxVersion" }
+androidx-camera-core = { module = "androidx.camera:camera-core", version.ref = "cameraCore" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomRuntime" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomRuntime" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
+play-services-mlkit-face-detection = { module = "com.google.android.gms:play-services-mlkit-face-detection", version.ref = "playServicesMlkitFaceDetection" }
+
+
 
 # Testing
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -105,12 +121,18 @@ testing = [
     "androidx-test-rules",
     "androidx-compose-ui-test-junit4"
 ]
-
 hardware-integration = [
     "rxjava",
     "rxandroid",
     "polar-ble-sdk",
-    "androidx-camera-core"
+    "androidx-camera-core",
+    "androidx-camera-view",
+    "androidx-camera-camera2",
+    "androidx-room-compiler",
+    "androidx-room-ktx",
+    "androidx-room-runtime",
+    "coil-compose",
+    "play-services-mlkit-face-detection"
 ]
 
 [plugins]
