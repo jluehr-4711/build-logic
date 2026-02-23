@@ -4,15 +4,7 @@ plugins {
     id("org.jetbrains.kotlin.plugin.compose")
 }
 
-val baseGroup = "no.jluehr"
-val pathNamespace = project.name
-    .replace(":", ".")
-    .replace(Regex("[^\\w.]"), "_")
-    .trim('.')
-
 android {
-
-    namespace = "$baseGroup.$pathNamespace"
 
     compileSdk = 36
     defaultConfig {
@@ -36,7 +28,6 @@ android {
         compose = true
     }
 }
-
 val libs = extensions.getByType<VersionCatalogsExtension>().named("libs")
 
 fun String.asLib() = libs.findLibrary(this).get()
@@ -44,13 +35,11 @@ fun String.asBundle() = libs.findBundle(this).get()
 
 dependencies {
     "implementation"("base".asBundle())
+
     "implementation"(platform("androidx-compose-bom".asLib()))
     "testImplementation"("junit".asLib())
     "androidTestImplementation"(platform("androidx-compose-bom".asLib()))
     "androidTestImplementation"("testing".asBundle())
     "debugImplementation"("compose-debug".asBundle())
-    "implementation"("support-game".asLib())
     "implementation"("hardware-integration".asBundle())
-
-
 }

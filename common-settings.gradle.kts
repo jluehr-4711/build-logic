@@ -22,5 +22,5 @@ dependencyResolutionManagement {
         maven { url = uri("https://jitpack.io") }
     }
 }
-includeBuild("../tens-h10-infrastructure")
+includeBuild("../lib-game")
 

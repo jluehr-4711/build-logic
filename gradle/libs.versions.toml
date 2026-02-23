@@ -88,8 +88,13 @@ androidx-test-runner = { group = "androidx.test", name = "runner", version.ref =
 androidx-test-rules = { group = "androidx.test", name = "rules", version.ref = "testRules" }
 androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 
-tens-infrastructure = { group = "no.jluehr", name = "tensh10", version = "1.0-SNAPSHOT" }
 nongames = { group = "no.jluehr.nongames", name = "nongames", version = "1.0-SNAPSHOT" }
+
+## support-libs
+support-game = { group = "no.jluehr", name = "lib-game", version = "1.0-SNAPSHOT" }
+support-ble = { group = "no.jluehr", name = "lib-ble", version = "1.0-SNAPSHOT" }
+support-platform = { group = "no.jluehr", name = "lib-platform", version = "1.0-SNAPSHOT" }
+
 
 [bundles]
 base = [
